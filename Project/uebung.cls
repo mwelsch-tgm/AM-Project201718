@@ -8,3 +8,4 @@
 \RequirePackage{amsmath}
 \RequirePackage{ngerman}
 \RequirePackage{pgfplots}
+\pgfplotsset{compat=1.15}
