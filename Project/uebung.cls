@@ -1,4 +1,4 @@
-\ProvidesClass{abgabe}[Schuluebung Preset]
+\ProvidesClass{uebung}[Schuluebung Preset]
 
 \LoadClass[]{article}
 
