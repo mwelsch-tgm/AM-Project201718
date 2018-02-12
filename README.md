@@ -58,11 +58,11 @@ Bei jedem Package per Kommentar hinzufügen warum es benötigt wird und wieso ge
 
 Kapitelüberschriften: \section
 
-Definitionen von Kapitel: \subsection
+Definitionen in Kapiteln: \subsection
 
 Unterkapitel: \subsection
 
-Definition von Unterkapitel: \subsubsection
+Definitionen in Unterkapiteln: \subsubsection
 
 Beispiele: Allgemein immer mit der selben "Stufe" der letzten Überschrift aber als "*" Version anführen: `\subsection*`
 
