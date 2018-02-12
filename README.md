@@ -57,9 +57,13 @@ Bei jedem Package per Kommentar hinzufügen warum es benötigt wird und wieso ge
 ### 2.4 Überschriften
 
 Kapitelüberschriften: \section
+
 Definitionen von Kapitel: \subsection
+
 Unterkapitel: \subsection
+
 Definition von Unterkapitel: \subsubsection
+
 Beispiele: Allgemein immer mit der selben "Stufe" der letzten Überschrift aber als "*" Version anführen: `\subsection*`
 
 ### 2.5 Graphen
