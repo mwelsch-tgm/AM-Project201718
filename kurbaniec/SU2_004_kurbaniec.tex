@@ -1,0 +1,44 @@
+\documentclass[../mainfile.tex]{subfiles}
+\RequirePackage[nosumlimits]{amsmath} %Preiset den Mathmode
+\RequirePackage{ngerman} %Ich mag Deutsch
+\RequirePackage[utf8x]{inputenc} %Mehr Deutsch
+\usepackage{enumitem} %Für tolle Aufzählung
+
+\begin{document}
+	\subsection{Wurzelkriterium}
+	Sei $\sum_{k=1}^\infty a_k$ eine Reihe, $r:=\lim_{k\to\infty} \sqrt[k]{|a_k|}$
+	r existiert.
+		\begin{enumerate}[label=(\alph*)]
+			\item $r < 1$ :
+			\item $r > 1$ :
+		\end{enumerate}
+	\subsection*{Beispiel}
+	$\sum_{k=1}^\infty (\frac{2}{k})^k$
+	\newline
+	\newline
+	WT: $r = \lim_{k\to\infty} \sqrt[k]{(\frac{2}{k})^k} = \lim_{k\to\infty} \frac{2}{4} = 0$
+	\newline
+	$0 < 1 \Longrightarrow$ Reihe absolut konvergent. 
+	
+	\subsection{Leibniz-Kriterium}
+	Ist $(a_k)^\infty_{k=1}$ (unendliche Folge) eine monoton fallende Nullfolge (Grenzwert 0), dann ist die (alternierende) Reihe $\sum_{k=1}^\infty (-1)^k \: a_k$ konvergent.
+	\subsection*{Beispiel}
+	 $\sum_{k=1}^\infty (-1)^k\:\frac{k+7}{k^2}$
+	\newline \newline
+	$\frac{k+7}{k^2} = a_k \longrightarrow \lim_{k\to\infty} a_k = 0$ 
+	\newline
+	Lk$\surd \Longrightarrow$ Reihe konvergiert
+	\newline \newline
+	Monotonie: 
+	\begin{align*}
+		a_k & = \frac{k+7}{k^2} \\
+		a_{k+1} & = \frac{k+8}{(k+1)^2} = \frac{(k+1)+7}{(k+1)^2} = \frac{(k+1)\cdot(1+\frac{7}{k+1})}{(k+1)^2} \\
+		& = \frac{1+\frac{7}{k+1}}{k+1} \leq \frac{1+\frac{7}{k}}{k+1} \leq \frac{1+\frac{7}{k}}{k} \\
+		& = \frac{k+7}{k^2} = a_k \\
+		\\
+		a_{k+1} & \leq a_k
+	\end{align*}
+	\newline
+	
+	
+\end{document}
