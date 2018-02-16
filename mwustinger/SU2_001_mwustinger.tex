@@ -1,0 +1,27 @@
+\documentclass[.../mainfile.tex]{subfiles}
+\usepackage[utf8x]{inputenc} % Weiß egentlich nicht genau was das package macht ist aber toll
+\usepackage{ngerman} %Weil ich so GRASS bin
+\usepackage{amsmath} %Mathe Zeichen
+\usepackage{amssymb} %Wer das ließt fügt diese Datei gerade zur Matheabgage hinzu
+\begin{document}
+	
+	\section{Reihen}	
+	
+	\subsection{Definition}
+	Folge der Partialsummen heißt Reihe.\\
+	Reihe konvergent, wenn eine Summe existiert.\\
+	Reihe divergent, wenn die Folge der Partialsummen divergent.\\
+	
+	\subsection{Absolute Konvergenz}
+	\subsubsection{Definition}
+	Eine Reihe $\sum^\infty_{k=1}a_{k}$ heißt genau dann absolut konvergent, wenn die zugehörige Reihe $\sum^\infty_{k=1}|a_{k}|$ konvergiert.
+	\subsection*{Bsp}
+	$\sum^\infty_{k=1}(-1)^{k}\frac{1}{k}$\\
+	$a_{k}=-\frac{1}{2k-1}  <-$  ungeraden\\
+	$b_{k}=\frac{1}{2k}  <-$  geraden\\\\
+	$b_{k}$ ist harmonische Reihe\\
+	$\frac{1}{2}\sum^\infty_{k=1}\frac{1}{k}=\infty$\\
+	$a_{k}: a_{k} =-\frac{1}{2k-1}$\\
+	$M:=1+|\lim\limits_{n \rightarrow \infty}{\sum^n_{k=1}}(-1)^{k}\frac{1}{k}|$\\\\
+	Umsortieren der Glieder von $ a_{k} $ und $ b_{k} $. Anfang aller Glieder von $ b_{k} $ kommen bis die Summe größer als $M+1$ ist, dann das nächste $ a_{k} $ wählen, so ist die nächste Partialsumme größer als $M$.
+\end{document}
